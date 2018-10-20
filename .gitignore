@@ -42,6 +42,7 @@ hs_err_pid*
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 .idea/**/codeStyles
+.idea/codeStyles/codeStyleConfig.xml
 
 # Gradle
 .idea/**/gradle.xml
