@@ -1,6 +1,10 @@
-package multitasking;
+package multitasking.threadPool;
 
 //Implements the thread pool dispatcher model
+
+import multitasking.Dispatcher;
+import multitasking.Logger;
+import multitasking.ProtocolFactory;
 
 import java.io.IOException;
 import java.net.ServerSocket;

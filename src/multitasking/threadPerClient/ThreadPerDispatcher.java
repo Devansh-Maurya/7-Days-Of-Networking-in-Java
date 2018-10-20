@@ -1,14 +1,18 @@
-package multitasking;
+package multitasking.threadPerClient;
 
 //Thread per client dispatcher
 //Same code as the loop in TCPEchoServerThread.java
 //Only change is that it uses protocol factory
 
+import multitasking.Dispatcher;
+import multitasking.Logger;
+import multitasking.ProtocolFactory;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ThreadPerDispatcher implements Dispatcher{
+public class ThreadPerDispatcher implements Dispatcher {
 
     @Override
     public void startDispatching(ServerSocket serverSocket, Logger logger,
