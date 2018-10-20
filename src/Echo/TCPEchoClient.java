@@ -8,7 +8,7 @@ import java.net.SocketException;
 
 public class TCPEchoClient {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         if ((args.length < 2) || (args.length > 3)) // Test for correct # of args
             throw new IllegalArgumentException("Parameter(s): <Server> <Word> [<Port>]");
@@ -22,6 +22,8 @@ public class TCPEchoClient {
         // Create socket that is connected to server on specified port
         Socket socket = new Socket(server, serverPort);
         System.out.println("Connected to server...sending echo string");
+
+        Thread.sleep(10000);
 
         InputStream in = socket.getInputStream();
         OutputStream out = socket.getOutputStream();
